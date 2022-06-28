@@ -41,7 +41,6 @@
         "redhat.vscode-yaml",
         "samuelcolvin.jinjahtml"
     ],
-    "initializeCommand": "git config --global --add safe.directory /workspace/dbt-devcontainer/jaffle_shop",
-    "onCreateCommand": "git submodule update --init",
+    
     "remoteUser": "vscode"
 }
