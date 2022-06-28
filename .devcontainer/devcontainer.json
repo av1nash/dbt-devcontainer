@@ -42,5 +42,6 @@
         "samuelcolvin.jinjahtml"
     ],
     "initializeCommand": "git submodule update --init",
+    "postCreateCommand": "git config --global --add safe.directory /workspace/dbt-devcontainer/jaffle_shop",
     "remoteUser": "vscode"
 }
