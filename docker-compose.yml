@@ -25,14 +25,15 @@ services:
     # (Adding the "ports" property to this file will not forward from a Codespace.)
 
   db:
-    image: postgres:14.2
-    restart: always
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    #restart: always
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - sql-data:/var/lib/sql/data
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_DB: postgres
-      POSTGRES_PASSWORD: postgres
+      SA_PASSWORD: "L0calTesting!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
 
 volumes:
-  postgres-data:
+  sql-data:
