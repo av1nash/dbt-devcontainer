@@ -4,8 +4,9 @@ jaffle_shop:
     dev:
       type: sqlserver
       driver: 'ODBC Driver 17 for SQL Server' # (The ODBC Driver installed on your system)
-      server: localhost
+      server: "localhost"
+      schema: "dbt"
       port: 1433
-      database: msdb
-      user: sa
-      password: L0calTesting!
+      database: "msdb"
+      user: "sa"
+      password: "L0calTesting!"
